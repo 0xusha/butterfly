@@ -54,7 +54,7 @@ for i in range(45):
     base_heart.append((x, y, tilt, flap_speed, flap_offset))
 
 target_scales = [0.05, 0.15, 0.4, 1.0, 2.5, 6.0, 14.0, 32.0, 75.0]
-growth_rate = 1.035 
+growth_rate = 1.012 
 cx, cy = WIDTH // 2, HEIGHT // 2
 
 mode = "BUILD"
@@ -132,7 +132,7 @@ while running:
             
         if build_idx < len(target_scales):
             current_scale = target_scales[build_idx]
-            trace_count += 3.5 
+            trace_count += 1.2
             draw_ring(current_scale, int(trace_count), ticks)
             
             if trace_count >= len(base_heart):
